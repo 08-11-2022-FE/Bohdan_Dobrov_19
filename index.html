@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>R-Navigation</title>
+        <link href="src/styles/reset.css" rel="stylesheet">
+        <link href="dist/style.css" rel="stylesheet">
+        <script src="src/js/script.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="sidebar sidebar-visible" id="sidebar">
+                <div class="heading">
+                    <img class="heading__logo" src="src/img/icon.png" alt="logo">
+                    <h1 class="heading__title">LightBoard</h1>
+                    <div class="heading__button" onclick="sidebar()">
+                        <img src="src/img/arrow.svg" alt="arrow">
+                    </div>
+                </div>
+                <div class="categories">
+                    <div class="categories__items">
+                        <a href="" class="link">
+                            <div class="categories__item">
+                                <svg class="categories__icon">
+                                    <use xlink:href="./src/img/sprite.svg#dashboard"></use>
+                                </svg>
+                                <p class="categories__text">Dashboard</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="categories__items">
+                        <h2 class="categories__title">Apps</h2>
+                        <ul class="categories__list">
+                            <li>
+                                <a href="" class="link">
+                                    <div class="categories__item">
+                                        <div class="logo-count">
+                                            <svg class="categories__icon">
+                                                <use xlink:href="./src/img/sprite.svg#mail"></use>
+                                            </svg>
+                                        </div>
+                                        <p class="categories__text">Email</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="link">
+                                    <div class="categories__item">
+                                        <div class="logo-count">
+                                            <svg class="categories__icon">
+                                                <use xlink:href="./src/img/sprite.svg#bubble"></use>
+                                            </svg>
+                                        </div>
+                                        <p class="categories__text">Chats</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="link">
+                                    <div class="categories__item">
+                                        <div class="lofo-count">
+                                            <svg class="categories__icon">
+                                                <use xlink:href="./src/img/sprite.svg#calendar"></use>
+                                            </svg>
+                                        </div>
+                                        <p class="categories__text">Calendar</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="link">
+                                    <div class="categories__item">
+                                        <svg class="categories__icon">
+                                            <use xlink:href="./src/img/sprite.svg#news"></use>
+                                        </svg>
+                                        <p class="categories__text">News</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="link">
+                                    <div class="categories__item">
+                                        <svg class="categories__icon">
+                                            <use xlink:href="./src/img/sprite.svg#study"></use>
+                                        </svg>
+                                        <p class="categories__text">Knowledge</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="link">
+                                    <div class="categories__item">
+                                        <svg class="categories__icon">
+                                            <use xlink:href="./src/img/sprite.svg#stack"></use>
+                                        </svg>
+                                        <p class="categories__text">File manager</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="link">
+                                    <div class="categories__item">
+                                        <svg class="categories__icon">
+                                            <use xlink:href="./src/img/sprite.svg#location"></use>
+                                        </svg>
+                                        <p class="categories__text">Leaflet Maps</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="categories__items">
+                        <h2 class="categories__title">Auth pages</h2>
+                        <ul class="categories__list">
+                            <li>
+                                <a href="" class="link">
+                                    <div class="categories__item">
+                                        <svg class="categories__icon">
+                                            <use xlink:href="./src/img/sprite.svg#profile"></use>
+                                        </svg>
+                                        <p class="categories__text">Profile</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="link">
+                                    <div class="categories__item">
+                                        <svg class="categories__icon">
+                                            <use xlink:href="./src/img/sprite.svg#lock"></use>
+                                        </svg>
+                                        <p class="categories__text">Permissions</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="link">
+                                    <div class="categories__item">
+                                        <svg class="categories__icon">
+                                            <use xlink:href="./src/img/sprite.svg#log-out"></use>
+                                        </svg>
+                                        <p class="categories__text">Log Out</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="categories__items">
+                        <h2 class="categories__title">User Interface</h2>
+                        <ul class="categories__list">
+                            <li>
+                                <a href="" class="link">
+                                    <div class="categories__item">
+                                        <svg class="categories__icon">
+                                            <use xlink:href="./src/img/sprite.svg#eye"></use>
+                                        </svg>
+                                        <p class="categories__text">Feather</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="link">
+                                    <div class="categories__item">
+                                        <svg class="categories__icon">
+                                            <use xlink:href="./src/img/sprite.svg#wallet"></use>
+                                        </svg>
+                                        <p class="categories__text">Ecommerce</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="link">
+                                    <div class="categories__item">
+                                        <svg class="categories__icon">
+                                            <use xlink:href="./src/img/sprite.svg#lab"></use>
+                                        </svg>
+                                        <p class="categories__text">Components</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="link">
+                                    <div class="categories__item">
+                                        <svg class="categories__icon">
+                                            <use xlink:href="./src/img/sprite.svg#page"></use>
+                                        </svg>
+                                        <p class="categories__text">Pages</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="link">
+                                    <div class="categories__item">
+                                        <svg class="categories__icon">
+                                            <use xlink:href="./src/img/sprite.svg#pen"></use>
+                                        </svg>
+                                        <p class="categories__text">Editor</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <main class="main">
+                <header class="header">
+                    <div class="qiuck-panel">
+                        <a href="" class="link">
+                            <svg class="categories__icon">
+                                <use xlink:href="./src/img/sprite.svg#mail"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="link">
+                            <svg class="categories__icon">
+                                <use xlink:href="./src/img/sprite.svg#bubble"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="link"><svg class="categories__icon">
+                            <use xlink:href="./src/img/sprite.svg#calendar"></use>
+                        </svg></a>
+                        <a href="" class="link"><svg class="categories__icon">
+                            <use xlink:href="./src/img/sprite.svg#star"></use>
+                        </svg></a>
+                    </div>
+                    <div class="quick-settings">
+                        <div class="quick-settings__lang">
+                            <img src="src/img/lang-icon.png" alt="lang">
+                            <p class="text-lang">English</p>
+                        </div>
+                        <div class="quick-settings__setting">
+                            <a href="" class="link">
+                                <svg class="categories__icon">
+                                    <use xlink:href="./src/img/sprite.svg#lamp"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="link">
+                                <svg class="categories__icon">
+                                    <use xlink:href="./src/img/sprite.svg#search"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="link">
+                                <svg class="categories__icon">
+                                    <use xlink:href="./src/img/sprite.svg#set"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <img src="src/img/avatar.png" alt="avatar">
+                    </div>
+                </header>
+            </main>
+        </div>
+    </body>
+</html>
