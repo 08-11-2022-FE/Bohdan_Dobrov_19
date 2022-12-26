@@ -71,7 +71,7 @@ $title-color: #828282;
         width: 20px;
         height: 20px;
         cursor: pointer;
-        background-image: url(../../src/img/arrow.svg);
+        background-image: url(../src/img/arrow.svg);
         background-repeat: no-repeat;
         background-position: center;
     }
@@ -249,7 +249,7 @@ $title-color: #828282;
     .categories__title {
         font-size: 0;
         color: transparent;
-        background-image: url(../../src/img/line.png);
+        background-image: url(../src/img/line.png);
         background-repeat: no-repeat;
         background-position: center;
     }
@@ -276,7 +276,7 @@ $title-color: #828282;
     }
 
     .heading__button {
-        background-image: url(../../src/img/arrow-light.svg);
+        background-image: url(../src/img/arrow-light.svg);
         background-repeat: no-repeat;
         // background-position: center;
     }
