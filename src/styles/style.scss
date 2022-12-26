@@ -24,7 +24,7 @@ $hover-color: #FFFFFF;
     line-height: 22px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 * {
     box-sizing: border-box;
 }
@@ -39,15 +39,17 @@ $hover-color: #FFFFFF;
 // sidebar
 .sidebar {
     max-width: 220px;
+    height: 100%;
     background-color: $aside-color;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
-    padding: 30px 15px;
+    padding: 30px 0;
 }
 
 .heading {
     display: flex;
     align-items: center;
     margin-bottom: 40px;
+    padding: 0 15px;
 
     .heading__logo {
         margin-right: 7px;
@@ -62,10 +64,23 @@ $hover-color: #FFFFFF;
 
     .heading__button {
         justify-self: flex-end;
+        cursor: pointer;
+    }
+}
+
+.categories {
+    .link {
+        padding: 0 15px;
+    }
+    
+    & .link:hover {
+        background: #9E8CFC;
+        box-shadow: 0px 0px 20px rgba(158, 140, 252, 0.7);
     }
 }
 
 .link {
+    display: block;
     text-decoration: none;
     font-size: 0;
 
@@ -78,6 +93,40 @@ $hover-color: #FFFFFF;
     }
 }
 
+.logo-count {
+    position: relative;
+
+    .logo-count__item {
+        position: absolute;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        color: #4F4F4F;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        top: -7px;
+        right: -13px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .color-mail {
+        background-color: #6FCF97;
+    }
+    
+    .color-chats {
+        background-color: #EA5455;
+        color: white;
+    }
+
+    .color-calendar {
+        background-color: #F2C94C;
+    }
+}
+
 .categories__items {
     margin-bottom: 30px;
 
@@ -87,6 +136,7 @@ $hover-color: #FFFFFF;
         text-transform: uppercase;
         @extend %text-aside;
         padding-bottom: 5px;
+        padding-left: 15px;
     }
 }
 
@@ -159,7 +209,7 @@ $hover-color: #FFFFFF;
 .sidebar-hidden {
     width: 80px;
     position: relative;
-    padding: 27px 15px;
+
 
     .heading {
         justify-content: center;
@@ -179,13 +229,16 @@ $hover-color: #FFFFFF;
         transform: rotate(180deg);
     }
 
-    .categories__items {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .categories__item {
+        justify-content: center;
+    }
+
+    .categories__list {
+        width: 100%;
     }
 
     .categories__title {
+        font-size: 0;
         color: transparent;
         background-image: url(../../src/img/line.png);
         background-repeat: no-repeat;
