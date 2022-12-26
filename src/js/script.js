@@ -24,8 +24,19 @@ function myFunction(width) {
     }
   }
 
-  var width = window.matchMedia("(max-width: 550px)");
+  var width = window.matchMedia("(max-width: 580px)");
   width.addListener(myFunction); 
   myFunction(width);
 
 //function changes themes(dark/light)
+function theme() {
+    // variable for change themes color
+    var x = document.getElementById("theme");
+    if (x.classList.contains("dark-theme")) {
+        x.classList.add("light-theme");
+        x.classList.remove("dark-theme");
+    } else {
+        x.classList.add("dark-theme");
+        x.classList.remove("light-theme");
+    }
+}

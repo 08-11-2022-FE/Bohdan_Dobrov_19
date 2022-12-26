@@ -1,10 +1,14 @@
 // connected _font.scss
 @use 'font';
-$aside-color: #283046;
-$main-color: #161D31;
-$content-color: #BDBDBD;
-$title-color: #828282;
+$dark-main-color: #161D31;
+$light-main-color: white;
+
+$dark-content-color: #BDBDBD;
+$light-content-color: #4F4F4F;
+
 $hover-color: #FFFFFF;
+$aside-color: #283046;
+$title-color: #828282;
 
 %text-aside {
     font-weight: 400;
@@ -32,7 +36,7 @@ $hover-color: #FFFFFF;
 .wrapper {
     max-width: 1440px;
     margin: 0 auto;
-    background-color: $main-color;
+    background-color: $dark-main-color;
     display: flex;
 }
 
@@ -59,12 +63,17 @@ $hover-color: #FFFFFF;
         font-family: font.$montserat;
         @extend %text-logo;
         color: #9E8CFC;
-        margin-right: 30px;
+        margin-right: 28px;
     }
 
     .heading__button {
         justify-self: flex-end;
+        width: 20px;
+        height: 20px;
         cursor: pointer;
+        background-image: url(../../src/img/arrow.svg);
+        background-repeat: no-repeat;
+        background-position: center;
     }
 }
 
@@ -150,14 +159,14 @@ $hover-color: #FFFFFF;
         font-family: font.$montserat;
         @extend %text-aside;
         text-decoration: none;
-        color: $content-color;
+        color: $dark-content-color;
     }
 }
 
 .categories__icon {
     width: 26px;
     height: 26px;
-    fill: $content-color;
+    fill: $dark-content-color;
 }
 
 // main content
@@ -196,7 +205,7 @@ $hover-color: #FFFFFF;
 
     .text-lang {
         font-family: font.$montserat;
-        color: $content-color;
+        color: $dark-content-color;
         @extend %text-lang;
     }
 }
@@ -250,6 +259,60 @@ $hover-color: #FFFFFF;
     }
 }
 
+.button {
+    cursor: pointer;
+
+    &:hover .categories__icon {
+        fill: $hover-color;
+    }
+}
+// change theme
+.light-theme {
+    background-color: $light-main-color;
+
+    .sidebar {
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+        background-color: $light-main-color;
+    }
+
+    .heading__button {
+        background-image: url(../../src/img/arrow-light.svg);
+        background-repeat: no-repeat;
+        // background-position: center;
+    }
+
+    .categories__text {
+        color: $light-content-color;
+    }
+
+    .categories__icon {
+        fill: $light-content-color;
+    }
+
+    .header {
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+        background-color: $light-main-color;
+    }
+
+    .text-lang {
+        color: $light-content-color;
+    }
+
+    .qiuck-panel {
+        .link:hover {
+            .categories__icon {
+                fill: #9E8CFC;
+            }
+        }
+    }
+    
+    .button {
+        &:hover .categories__icon {
+            fill: #9E8CFC;
+        }
+    }
+}
+
 @media screen and (max-width: 820px) {
     .quick-settings {
         gap: 20px;
@@ -261,5 +324,22 @@ $hover-color: #FFFFFF;
 
     .header .qiuck-panel {
         gap: 10px;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    .main {
+        width: 100%;
+        padding: 0 15px;
+    }
+    
+    .header .qiuck-panel {
+        display: none;
+    }
+
+    .header .quick-settings {
+        gap: 20px;
+        width: 100%;
+        justify-content: space-between;
     }
 }

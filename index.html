@@ -10,13 +10,12 @@
         <script src="src/js/script.js"></script>
     </head>
     <body>
-        <div class="wrapper">
+        <div class="wrapper dark-theme" id="theme">
             <div class="sidebar sidebar-visible" id="sidebar">
                 <div class="heading">
                     <img class="heading__logo" src="src/img/icon.png" alt="logo">
                     <h1 class="heading__title">LightBoard</h1>
                     <div class="heading__button" onclick="sidebar()">
-                        <img src="src/img/arrow.svg" alt="arrow">
                     </div>
                 </div>
                 <div class="categories">
@@ -232,21 +231,21 @@
                             <p class="text-lang">English</p>
                         </div>
                         <div class="quick-settings__setting">
-                            <a href="" class="link">
+                            <div class="button" onclick="theme()">
                                 <svg class="categories__icon">
                                     <use xlink:href="./src/img/sprite.svg#lamp"></use>
                                 </svg>
-                            </a>
-                            <a href="" class="link">
+                            </div>
+                            <div class="button">
                                 <svg class="categories__icon">
                                     <use xlink:href="./src/img/sprite.svg#search"></use>
                                 </svg>
-                            </a>
-                            <a href="" class="link">
+                            </div>
+                            <div class="button">
                                 <svg class="categories__icon">
                                     <use xlink:href="./src/img/sprite.svg#set"></use>
                                 </svg>
-                            </a>
+                            </div>
                         </div>
                         <img src="src/img/avatar.png" alt="avatar">
                     </div>
